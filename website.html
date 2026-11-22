@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="The personal portfolio of Dev Rajesh — curious about mathematics, football, engineering, programming, and manga." />
+  <title>Dev Rajesh — Personal Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
+            mono: ["ui-monospace", "SFMono-Regular", "monospace"]
+          },
+          colors: {
+            ink: "#111318",
+            paper: "#f5f4ef",
+            lime: "#c7f36b"
+          },
+          boxShadow: {
+            soft: "0 20px 60px rgba(17, 19, 24, 0.08)"
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { background: #f5f4ef; }
+    .grid-bg {
+      background-image: linear-gradient(rgba(17,19,24,.045) 1px, transparent 1px),
+                        linear-gradient(90deg, rgba(17,19,24,.045) 1px, transparent 1px);
+      background-size: 32px 32px;
+    }
+    ::selection { background: #c7f36b; color: #111318; }
+  </style>
+</head>
+<body class="font-sans text-ink antialiased">
+  <!-- Navigation -->
+  <header class="mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
+    <a href="#" class="font-mono text-lg font-bold tracking-tight">dev<span class="text-lime-600">.</span></a>
+    <nav class="hidden gap-8 text-sm font-medium text-gray-600 sm:flex">
+      <a class="transition hover:text-black" href="#about">About</a>
+      <a class="transition hover:text-black" href="#projects">Projects</a>
+      <a class="transition hover:text-black" href="#interests">Interests</a>
+    </nav>
+    <a href="mailto:hello@example.com" class="rounded-full border border-gray-300 px-4 py-2 text-sm font-semibold transition hover:border-ink hover:bg-ink hover:text-white">
+      Say hello <span aria-hidden="true">↗</span>
+    </a>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="grid-bg relative overflow-hidden border-y border-black/10">
+      <div class="mx-auto grid max-w-6xl items-center gap-12 px-6 py-24 md:grid-cols-[1.35fr_.65fr] md:py-32">
+        <div>
+          <p class="mb-6 inline-flex items-center gap-2 rounded-full border border-black/10 bg-white/70 px-3 py-1.5 font-mono text-xs text-gray-600">
+            <span class="h-2 w-2 rounded-full bg-lime-500"></span>
+            CURIOUS BY DEFAULT
+          </p>
+          <h1 class="max-w-3xl text-5xl font-semibold leading-[1.05] tracking-tight sm:text-6xl md:text-7xl">
+            Hey, I'm <span class="underline decoration-lime decoration-[8px] underline-offset-4">Dev Rajesh.</span>
+          </h1>
+          <p class="mt-8 max-w-xl text-lg leading-8 text-gray-600">
+            I like understanding how things work — then building things of my own.
+            From mathematical ideas to little engineering experiments and software,
+            I'm always curious about what I can create next.
+          </p>
+          <div class="mt-10 flex flex-wrap gap-3">
+            <a href="#projects" class="rounded-full bg-ink px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-gray-700">
+              Explore my projects <span aria-hidden="true">↓</span>
+            </a>
+            <a href="#about" class="rounded-full border border-black/15 bg-white/60 px-6 py-3 text-sm font-semibold transition hover:bg-white">
+              A little about me
+            </a>
+          </div>
+        </div>
+
+        <div class="relative mx-auto w-full max-w-sm">
+          <div class="absolute -inset-4 rotate-3 rounded-[2rem] bg-lime"></div>
+          <div class="relative rounded-[1.7rem] border border-black/10 bg-white p-7 shadow-soft">
+            <div class="flex items-center justify-between border-b border-gray-100 pb-5">
+              <span class="font-mono text-xs text-gray-400">A QUICK INTRO</span>
+              <span class="font-mono text-xs text-gray-400">01 / 03</span>
+            </div>
+            <div class="py-8">
+              <div class="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-ink text-2xl text-lime">✳</div>
+              <p class="font-mono text-sm text-gray-400">CURRENTLY INTO</p>
+              <p class="mt-2 text-2xl font-semibold tracking-tight">Ideas, experiments<br />& making stuff.</p>
+            </div>
+            <div class="flex flex-wrap gap-2 border-t border-gray-100 pt-5">
+              <span class="rounded-full bg-gray-100 px-3 py-1.5 text-xs">Math</span>
+              <span class="rounded-full bg-gray-100 px-3 py-1.5 text-xs">Engineering</span>
+              <span class="rounded-full bg-gray-100 px-3 py-1.5 text-xs">Code</span>
+              <span class="rounded-full bg-gray-100 px-3 py-1.5 text-xs">Manga</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pointer-events-none absolute -bottom-20 -right-12 h-64 w-64 rounded-full border border-black/10"></div>
+      <div class="pointer-events-none absolute -bottom-12 -right-4 h-48 w-48 rounded-full border border-black/10"></div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="mx-auto max-w-6xl px-6 py-24">
+      <div class="grid gap-10 md:grid-cols-[.7fr_1.3fr]">
+        <div>
+          <p class="font-mono text-xs tracking-widest text-gray-400">01 — ABOUT</p>
+          <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">A bit about me.</h2>
+        </div>
+        <div class="max-w-2xl">
+          <p class="text-xl leading-9 text-gray-700">
+            I'm Dev — someone who enjoys exploring the overlap between logic,
+            creativity, and technology. I enjoy taking an idea, figuring out
+            the pieces that make it work, and turning it into something tangible.
+          </p>
+          <p class="mt-5 leading-8 text-gray-500">
+            Sometimes that means experimenting with mechanical linkages. Other
+            times, it means designing a programming language or researching how
+            AI systems handle and retrieve information.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="bg-ink py-24 text-white">
+      <div class="mx-auto max-w-6xl px-6">
+        <div class="mb-12 flex flex-wrap items-end justify-between gap-6">
+          <div>
+            <p class="font-mono text-xs tracking-widest text-lime">02 — SELECTED WORK</p>
+            <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">Things I've built<br class="sm:hidden" /> & explored.</h2>
+          </div>
+          <p class="max-w-sm text-sm leading-7 text-gray-400">A few projects that bring together my interests in mechanics, programming, and research.</p>
+        </div>
+
+        <div class="grid gap-5 md:grid-cols-2">
+          <!-- Project 1 -->
+          <article class="group rounded-3xl border border-white/10 bg-white/[0.04] p-7 transition hover:-translate-y-1 hover:bg-white/[0.07] sm:p-9">
+            <div class="mb-10 flex items-center justify-between">
+              <span class="font-mono text-xs text-gray-500">PROJECT 01</span>
+              <span class="rounded-full border border-lime/30 px-3 py-1 font-mono text-[10px] uppercase tracking-wider text-lime">Mechanical design</span>
+            </div>
+            <div class="mb-8 flex h-40 items-center justify-center overflow-hidden rounded-2xl bg-[#20242a]">
+              <svg viewBox="0 0 320 150" class="h-full w-full" role="img" aria-label="Abstract line illustration of a walking linkage mechanism">
+                <g fill="none" stroke="#c7f36b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M70 54 L120 36 L164 72 L216 44 L258 85" />
+                  <path d="M120 36 L112 105 L164 72 L180 125 L258 85" />
+                  <path d="M70 54 L112 105 L180 125" />
+                  <path d="M164 72 L216 112 L258 85" opacity=".65" />
+                  <circle cx="70" cy="54" r="5" fill="#c7f36b"/>
+                  <circle cx="120" cy="36" r="5" fill="#c7f36b"/>
+                  <circle cx="164" cy="72" r="5" fill="#c7f36b"/>
+                  <circle cx="216" cy="44" r="5" fill="#c7f36b"/>
+                  <circle cx="258" cy="85" r="5" fill="#c7f36b"/>
+                  <circle cx="112" cy="105" r="5" fill="#c7f36b"/>
+                  <circle cx="180" cy="125" r="5" fill="#c7f36b"/>
+                </g>
+                <path d="M36 132 H286" stroke="#6b7280" stroke-width="1" stroke-dasharray="4 5"/>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-semibold tracking-tight">Motorless Walking Dog</h3>
+            <p class="mt-4 leading-7 text-gray-400">
+              A mechanical walking dog built around <strong class="font-semibold text-white">Theo Jansen linkages</strong>.
+              The goal: create a walking mechanism without relying on motors.
+            </p>
+            <div class="mt-7 flex flex-wrap gap-2 text-xs text-gray-400">
+              <span class="rounded-full bg-white/5 px-3 py-1.5">Mechanisms</span>
+              <span class="rounded-full bg-white/5 px-3 py-1.5">Linkages</span>
+              <span class="rounded-full bg-white/5 px-3 py-1.5">Prototyping</span>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="group rounded-3xl border border-white/10 bg-white/[0.04] p-7 transition hover:-translate-y-1 hover:bg-white/[0.07] sm:p-9">
+            <div class="mb-10 flex items-center justify-between">
+              <span class="font-mono text-xs text-gray-500">PROJECT 02</span>
+              <span class="rounded-full border border-lime/30 px-3 py-1 font-mono text-[10px] uppercase tracking-wider text-lime">Programming</span>
+            </div>
+            <div class="mb-8 flex h-40 flex-col justify-center rounded-2xl bg-[#20242a] p-6 font-mono text-sm leading-7">
+              <p class="text-gray-500">// a tiny glimpse of Nova</p>
+              <p><span class="text-lime">nova</span> <span class="text-sky-300">page</span> {</p>
+              <p class="pl-5 text-gray-300">title: <span class="text-amber-200">"Hello, world!"</span></p>
+              <p class="pl-5 text-gray-300">style: <span class="text-amber-200">"minimal"</span></p>
+              <p>}</p>
+              <p class="mt-1 text-xs text-gray-500">→ HTML · CSS · JavaScript</p>
+            </div>
+            <h3 class="text-2xl font-semibold tracking-tight">Nova Programming Language</h3>
+            <p class="mt-4 leading-7 text-gray-400">
+              A programming language I created in Python. Its compiler, distributed
+              through <strong class="font-semibold text-white">PyPI</strong>, translates
+              Nova code into HTML, CSS, and JavaScript.
+            </p>
+            <div class="mt-7 flex flex-wrap gap-2 text-xs text-gray-400">
+              <span class="rounded-full bg-white/5 px-3 py-1.5">Python</span>
+              <span class="rounded-full bg-white/5 px-3 py-1.5">Compiler</span>
+              <span class="rounded-full bg-white/5 px-3 py-1.5">Web development</span>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="group rounded-3xl border border-white/10 bg-white/[0.04] p-7 transition hover:-translate-y-1 hover:bg-white/[0.07] md:col-span-2 sm:p-9">
+            <div class="mb-8 flex items-center justify-between">
+              <span class="font-mono text-xs text-gray-500">PROJECT 03</span>
+              <span class="rounded-full border border-lime/30 px-3 py-1 font-mono text-[10px] uppercase tracking-wider text-lime">Research</span>
+            </div>
+            <div class="grid gap-8 md:grid-cols-[.65fr_1.35fr] md:items-center">
+              <div class="flex h-40 items-center justify-center rounded-2xl bg-[#20242a]">
+                <div class="flex items-center gap-2 font-mono text-xs">
+                  <div class="rounded-lg border border-sky-300/40 px-3 py-4 text-sky-300">Query</div>
+                  <span class="text-gray-500">→</span>
+                  <div class="rounded-lg border border-lime/40 px-3 py-4 text-lime">RAG</div>
+                  <span class="text-gray-500">→</span>
+                  <div class="rounded-lg border border-violet-300/40 px-3 py-4 text-violet-300">Answer</div>
+                </div>
+              </div>
+              <div>
+                <h3 class="text-2xl font-semibold tracking-tight">Context Windows & RAG</h3>
+                <p class="mt-4 max-w-2xl leading-7 text-gray-400">
+                  I wrote a research paper exploring context windows and
+                  Retrieval-Augmented Generation (RAG) — two important ideas
+                  behind how language models process context and use external information.
+                </p>
+                <div class="mt-6 flex flex-wrap gap-2 text-xs text-gray-400">
+                  <span class="rounded-full bg-white/5 px-3 py-1.5">AI / LLMs</span>
+                  <span class="rounded-full bg-white/5 px-3 py-1.5">RAG</span>
+                  <span class="rounded-full bg-white/5 px-3 py-1.5">Technical writing</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interests -->
+    <section id="interests" class="mx-auto max-w-6xl px-6 py-24">
+      <div class="mb-12">
+        <p class="font-mono text-xs tracking-widest text-gray-400">03 — OUTSIDE THE PROJECTS</p>
+        <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">Things I enjoy.</h2>
+      </div>
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="rounded-3xl border border-black/10 bg-white p-6 shadow-soft">
+          <div class="mb-8 text-3xl">∑</div>
+          <h3 class="text-lg font-semibold">Mathematics</h3>
+          <p class="mt-2 text-sm leading-6 text-gray-500">Finding patterns, solving problems, and following ideas wherever they lead.</p>
+        </div>
+        <div class="rounded-3xl border border-black/10 bg-white p-6 shadow-soft">
+          <div class="mb-8 text-3xl">⚽</div>
+          <h3 class="text-lg font-semibold">Football</h3>
+          <p class="mt-2 text-sm leading-6 text-gray-500">The game, the tactics, the teamwork, and the moments that make it exciting.</p>
+        </div>
+        <div class="rounded-3xl border border-black/10 bg-white p-6 shadow-soft">
+          <div class="mb-8 text-3xl">⚙</div>
+          <h3 class="text-lg font-semibold">Building things</h3>
+          <p class="mt-2 text-sm leading-6 text-gray-500">Turning ideas into prototypes, experiments, and working creations.</p>
+        </div>
+        <div class="rounded-3xl border border-black/10 bg-white p-6 shadow-soft">
+          <div class="mb-8 text-3xl">冊</div>
+          <h3 class="text-lg font-semibold">Manga</h3>
+          <p class="mt-2 text-sm leading-6 text-gray-500">Good stories, memorable characters, and worlds worth getting lost in.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-black/10">
+      <div class="mx-auto flex max-w-6xl flex-col gap-4 px-6 py-10 sm:flex-row sm:items-center sm:justify-between">
+        <div>
+          <p class="font-semibold">Dev Rajesh<span class="text-lime-600">.</span></p>
+          <p class="mt-1 text-sm text-gray-500">Curious mind. Perpetual builder.</p>
+        </div>
+        <p class="font-mono text-xs text-gray-400">© <span id="year"></span> — Made with HTML & Tailwind CSS</p>
+      </div>
+    </footer>
+  </main>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
